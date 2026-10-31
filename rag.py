@@ -1,13 +1,12 @@
 
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import OpenAIEmbeddings,ChatOpenAI
-#from langchain_google_genai import GoogleGenerativeAIEmbeddings,ChatGoogleGenerativeAI
 from langchain_classic.retrievers.multi_query import MultiQueryRetriever
 from langchain_chroma import Chroma
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
-from langchain_community.document_loaders import PyPDFDirectoryLoader,PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 import os
 from pathlib import Path
 import streamlit as st
